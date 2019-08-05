@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="navbar-fixed hide-on-small-only">
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container"><a class="brand-logo" href="#!"><img class="logo" src="imgs/logo.png"></a><a class="sidenav-trigger" href="#" data-target="mobile"><i class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Wallet</a></li>
+                  <li><a href="#">Invest</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Wallet</a></li>
+          <li><a href="#">Invest</a></li>
+    </ul>
+    <header class="hide-on-small-only">
+      <h2>It’s investing time.</h2>
+    </header>
+        <nav class="toolbar">
+          <div class="container">
+            <div class="toolbar-warp"><a href="#"><i class="small material-icons">arrow_back</i></a>
+                  <div class="progress undefined">
+                    <div class="determinate" style="width:25%;"></div>
+                  </div><img class="toolbar-logo" src="imgs/toolbar-logo.png">
+            </div>
+          </div>
+        </nav>
+    <!-- Start Personal Section-->
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <!-- Start Personal Investing-->
+        <section class="contain personal_investing">
+          <div class="container">
+            <!-- progressbar on large screen-->
+                <div class="progress hide-on-small-only">
+                  <div class="determinate" style="width:25%;"></div>
+                </div>
+            <div class="row">
+              <div class="col s11">
+                <h2>
+                   <a class="hide-on-small-only" href="#"><i class="small material-icons">arrow_back</i></a>
+                  Do you want to create a personal or an organisational account?
+                </h2>
+              </div>
+              <div class="col s1">
+                <div class="helper_icon"><i class="small material-icons">help_outline</i></div>
+              </div>
+            </div>
+            <!-- Invest Box--><a class="waves-effect modal-trigger ivest_trigger" href="#ivestmodal">
+              <div class="invest_box hoverable">
+                <div class="invest_icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+<path d="M33.3333 35V31.6667C33.3333 27.9848 30.3486 25 26.6667 25H13.3333C9.65143 25 6.66666 27.9848 6.66666 31.6667V35" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 18.3333C23.6819 18.3333 26.6667 15.3486 26.6667 11.6667C26.6667 7.98477 23.6819 5 20 5C16.3181 5 13.3333 7.98477 13.3333 11.6667C13.3333 15.3486 16.3181 18.3333 20 18.3333Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+                <div class="invest_type">
+                  <p>Personal Account</p>
+                </div>
+              </div></a>
+            <!-- Invest Box--><a class="waves-effect modal-trigger ivest_trigger" href="#ivestmodal">
+              <div class="invest_box hoverable">
+                <div class="invest_icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33334 13.6667C3.33334 12.5621 4.22877 11.6667 5.33334 11.6667H34.6667C35.7712 11.6667 36.6667 12.5621 36.6667 13.6667V33C36.6667 34.1046 35.7712 35 34.6667 35H5.33333C4.22876 35 3.33334 34.1046 3.33334 33V13.6667Z" stroke="#30271D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.6667 35V8.33333C26.6667 6.49238 25.1743 5 23.3333 5H16.6667C14.8257 5 13.3333 6.49238 13.3333 8.33333V35" stroke="#30271D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </div>
+                <div class="invest_type">
+                  <p>Organisational Account</p>
+                </div>
+              </div></a>
+            <!-- Invest Modal-->
+            <div class="modal" id="ivestmodal">
+              <div class="modal-content">
+                <h4 class="modal-title">Differences between a Personal and an Organisational account:</h4>
+                <div class="main-container"> 
+                  <h6 class="modal-subtitle">
+                     <svg class="modal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>Personal Account
+                  </h6>
+                  <div class="modal-body">
+                    <ul>
+                      <li>- Tax rate on interest received: 28%</li>
+                      <li>- Investment limit:</li>
+                    </ul>
+                    <ul class="modal-list">
+                      <li>3000€ per project</li>
+                      <li>10.000€ per year </li>
+                    </ul>(unless you're a Qualified Investor or have an annual income higher than 70.000€)
+                    
+                  </div>
+                  <h6 class="modal-subtitle">
+                     <svg class="modal-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 9C2 7.89543 2.89543 7 4 7H20C21.1046 7 22 7.89543 22 9V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19V9Z" stroke="#30271D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="#30271D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>Organisational Account
+                  </h6>
+                  <div class="modal-body"> 
+                    <ul>
+                      <li>- Tax rate on interest received: 25%</li>
+                      <li>- No investment limits</li>
+                      <li>- We will need some documents from you:</li>
+                    </ul>
+                    <ul class="modal-list">
+                      <li>Shareholder Declaration</li>
+                      <li>Legal Representative ID document</li>
+                      <li>Articles of Association</li>
+                      <li>Registration Proof</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer"><a class="modal-close waves-effect waves-light btn btn-main" href="personal_name.html">Agree</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

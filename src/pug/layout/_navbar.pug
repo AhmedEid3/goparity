@@ -1,0 +1,19 @@
+//- Start Navbar
+mixin list_nav 
+  li: a(href="#") Overview
+  li: a(href="#") Wallet
+  li: a(href="#") Invest
+
+.navbar-fixed.hide-on-small-only
+  nav
+    div.nav-wrapper
+      .container
+        a(href="#!", class="brand-logo"): img(src="imgs/logo.png", class="logo")
+
+        a(href="#", data-target="mobile" class="sidenav-trigger"): i(class="material-icons") menu
+        ul(class="hide-on-med-and-down")
+          +list_nav
+
+ul.sidenav#mobile
+  +list_nav
+//- End Navbar

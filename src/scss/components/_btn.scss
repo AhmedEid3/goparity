@@ -1,0 +1,23 @@
+%btn-component {
+  width: 100%;
+  color: $main-txt-color !important;
+  border-radius: 200px;
+  box-shadow: none;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: $main-container-lg;
+  @media (max-width: $max-mobile) {
+    max-width: $main-container-m;
+  }
+}
+
+.btn-main {
+  @extend %btn-component;
+  background-color: $primary-color !important;
+}
+.btn-main-outline {
+  @extend %btn-component;
+  background-color: #ffffff !important;
+  border: 2px solid $primary-color !important;
+}

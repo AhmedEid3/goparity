@@ -1,0 +1,12 @@
+/*
+  Start Progress
+*/
+.progress {
+  background-color: $progress-color;
+  .determinate {
+    background-color: $primary-color;
+  }
+}
+/*
+  End Progress
+*/

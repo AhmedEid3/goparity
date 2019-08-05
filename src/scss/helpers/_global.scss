@@ -1,0 +1,65 @@
+body {
+  // min-height: 2000px;
+  font: {
+    family: $font-family;
+    size: $font-size;
+  }
+
+  /* 
+    custom container
+   */
+  .main-container {
+    max-width: $main-container-lg;
+    margin: auto;
+    @media (max-width: $max-mobile) {
+      max-width: $main-container-m;
+    }
+  }
+
+  /*Start head of any page */
+  .contain {
+    margin-top: 32px;
+    @media (max-width: $max-mobile) {
+      margin-top: 48px;
+    }
+    h2 {
+      position: relative;
+      margin-top: 32px;
+      padding-left: 45px;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 41px;
+      text-align: center;
+      letter-spacing: 0.25px;
+      color: $main-txt-color;
+      @media (max-width: $max-mobile) {
+        padding-left: 0;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        text-align: left;
+      }
+      @media (max-width: $max-med) {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+      }
+      a {
+        position: absolute;
+        left: 0;
+        color: $main-txt-color;
+      }
+    }
+    .content {
+      text-align: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $seconary-txt-color;
+      @media (max-width: $max-mobile) {
+        text-align: left;
+      }
+    }
+  }
+}
+/*End head of any page */

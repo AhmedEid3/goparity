@@ -1,0 +1,38 @@
+/*
+  Start Header
+*/
+header {
+  position: relative;
+  background-image: url("../imgs/header_invest.png");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  @media (max-width: $max-lg) {
+    height: 300px;
+  }
+  h2 {
+    font: {
+      size: 60px;
+      weight: 300;
+    }
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 73px;
+    letter-spacing: -0.5px;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    @media (max-width: $max-lg) {
+      font: {
+        size: 45px;
+      }
+      line-height: 50px;
+      bottom: 15px;
+    }
+  }
+}
+/*
+  End Header
+*/

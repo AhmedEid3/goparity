@@ -1,0 +1,6 @@
+//- mixin progress
+  value is default of percentge progressbar
+  className: class for show or hide the progreebar
+mixin progress(value=25, className)
+  div(class="progress " + className)
+    div(class="determinate", style={"width": value+"%"})

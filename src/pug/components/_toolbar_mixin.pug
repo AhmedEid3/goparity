@@ -1,0 +1,10 @@
+//-
+  progvalue: for progress value of toolbar;
+  link: for back to previous page;
+mixin toolbar(progValue, link="#")
+  nav.toolbar
+    .container
+      .toolbar-warp
+        a(href=link): i(class="small material-icons") arrow_back
+        +progress(progValue)
+        img(src="imgs/toolbar-logo.png", class="toolbar-logo")

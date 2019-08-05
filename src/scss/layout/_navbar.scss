@@ -1,0 +1,63 @@
+/* Start Navbar */
+%nav-height {
+  height: $navbar-height-l !important;
+  @media (max-width: $max-mobile) {
+    height: $navbar-height-s !important;
+  }
+}
+
+%nav-line-height {
+  line-height: $navbar-height-l !important;
+  @media (max-width: $max-mobile) {
+    line-height: $navbar-height-s !important;
+  }
+}
+
+.navbar-fixed {
+  height: 0;
+  nav {
+    @extend %nav-height;
+    background-color: rgba(255, 255, 255, 0.88);
+    .nav-wrapper {
+      .brand-logo {
+        @extend %nav-height;
+        @media (max-width: $max-med) {
+          left: 10%;
+        }
+        .logo {
+          margin: 20px 0;
+          width: 60px;
+          height: 56px;
+          @media (max-width: $max-mobile) {
+            margin: 10px 0;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .sidenav-trigger {
+      float: right;
+      color: #333333;
+      i {
+        @extend %nav-height;
+        @extend %nav-line-height;
+      }
+    }
+
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        float: none;
+        a {
+          @extend %nav-height;
+          @extend %nav-line-height;
+          color: $main-txt-color;
+        }
+      }
+    }
+  }
+}
+/* End Navbar */

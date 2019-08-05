@@ -1,0 +1,64 @@
+/*
+  Start Modal
+*/
+.modal {
+  top: 5% !important;
+  max-height: 90%;
+  .modal-content {
+    .modal-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      color: $main-txt-color;
+      text-align: center;
+      @media (max-width: $max-mobile) {
+        text-align: left;
+      }
+    }
+    .modal-subtitle {
+      margin-top: 0;
+      padding-top: 18px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      color: #000000;
+      position: relative;
+      padding-left: 30px;
+      .modal-icon {
+        position: absolute;
+        left: 0;
+        top: 14px;
+      }
+    }
+    .modal-body {
+      .modal-list {
+        li {
+          margin-bottom: 5px;
+          &:before {
+            content: "";
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: $primary-color;
+            margin-right: 12px;
+            margin-left: 30px;
+            margin-bottom: 1px;
+            @media (max-width: $max-mobile) {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    padding: 0 24px 24px;
+    height: 100%;
+  }
+}
+/*
+  End Modal
+*/

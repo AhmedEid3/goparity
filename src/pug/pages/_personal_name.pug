@@ -1,0 +1,32 @@
+- var previousPage = "personal_business.html";
+//- Includes Componenets
+include ../components/_progress_mixin.pug
+include ../components/_toolbar_mixin.pug
+
+// include toolbar
++toolbar(50, previousPage)
+
+// Start Personal Section
+.row
+  .col.s12.m10.offset-m1
+    // Start Personal Account 
+    section.contain.personal_account
+      .container
+        // progressbar on large screen
+        +progress(50, "hide-on-small-only")
+        .row
+          .col.s12
+            h2 
+              .
+                #[a(href=previousPage, class="hide-on-small-only"): i(class="small material-icons") arrow_back]
+                What’s your first name?
+        p.content Let us know who we’re talking to.
+
+        .main-container
+          .row
+            form.col.s12
+              .row
+                .input-field.col.s12
+                  input(id="firstName" type="email" class="validate")
+                  label(for="firstName") First name
+            button.btn-main.btn nice to meet you
